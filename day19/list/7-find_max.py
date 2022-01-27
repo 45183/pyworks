@@ -13,6 +13,12 @@ for i in score:
 print("최고 점수 :", max_v)
 
 
+# 내장 함수 - max()
+print("최고 점수 :", max(score))
+
+# 내장 함수 - min()
+print("최저 점수 :", min(score))
+
 # 최고 점수 위치
 max_idx = 0
 
@@ -23,3 +29,5 @@ for i in range(1, n):
 
 print("최고 점수의 위치 :", max_idx)
 
+
+# 내장 함수 - max()

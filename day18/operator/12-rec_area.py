@@ -9,4 +9,3 @@ area = width * height
 print("가로 길이 : " + str(width) + "cm")
 print("세로 길이 : " + str(height) + "cm")
 print("면적 :", str(area))
-
