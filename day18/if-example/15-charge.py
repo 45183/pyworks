@@ -16,6 +16,7 @@ elif age >= 14 and age < 20:
     print("중,고등학생입니다.")
     charge = 2500
 else:
+
     print("성인입니다.")
     charge = 3000
 
