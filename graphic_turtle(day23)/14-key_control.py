@@ -23,12 +23,12 @@ def clear():
 
 
 t.shape('turtle')
-t.onkeypress(turn_right, "Right")       # 첫글자 대문자           # 함수 호출시 괄호 생략
+t.onkeypress(turn_right, "Right")       # 첫글자 대문자          # 함수 호출시 괄호 생략
 t.onkeypress(turn_up, "Up")
 t.onkeypress(turn_left, "Left")
 t.onkeypress(turn_down, "Down")
 t.onkeypress(clear, "Escape")
-t.listen()      # 실행 대기     # 필수, 넣지 않을 경우 작동x
+t.listen()                              # 실행 대기             # 필수, 넣지 않을 경우 작동x
 
 
 

@@ -12,7 +12,7 @@ def polygon2(n, d):
         t.forward(d)
         t.left(360 / n)
 
-t.shape()           # 기본인경우(화살표) 생략가능
+t.shape()           # 기본(화살표)인 경우 생략가능
 
 polygon(3)
 polygon(5)
