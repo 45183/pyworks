@@ -2,7 +2,7 @@
 
 import os
 
-os.chdir('c:/pyworks/day20')        # 경로 이동
+os.chdir('c:/pyworks/day26')        # 경로 이동
 
-dir = os.popen('dir')
+dir = os.popen('dir')               # dir 명령 실행
 print(dir.read())
