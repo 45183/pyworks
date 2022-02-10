@@ -13,7 +13,7 @@ def turn_down():
 def start():
     global playing
     if playing == False:
-        playing = True             # 게임 시작
+        playing = True              # 게임 시작
         t.clear()                   # 화면 지우기
         play()                      # play 함수 호출
 
@@ -35,8 +35,9 @@ def play():
         t.ontimer(play, 100)
 
     t.forward(10)
-    angle = te.towards(t.pos())
-    te.setheading(angle)
+    if random.randint(1, 5) == 2:   # 1~5중에서 뽑은 수가 2일 확률(20%) - 적 거북이가 바로 따라오지 못하게 헤매게함
+        angle = te.towards(t.pos())
+        te.setheading(angle)
     speed = score + 5
     te.forward(speed)               # 적 거북이 속도 (5부터 시작, 점수 1점 오를 때마다 속도 1증가)
 
