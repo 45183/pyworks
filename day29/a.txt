@@ -1,0 +1,62 @@
+IPv4 - 네이버(www.naver.com -> 123.5.251.4) -> 4Byte : 2의 32제곱 (1Byte : 2^8)
+IPv6 - 2의 128제곱 - 16진수   2^16 : 8개
+
+물리 계층 - 허브, 리피터
+데이터 링크 계층 - 브리지, 스위치
+네트워크 계층 - 라우터, IP
+전송 계층 - TCP, UDP
+세션 계층
+표현 계층
+응용 계층
+
+	FOREIGN KEY(deptId) REFERENCES department(deptId)				-- 외래키 설정
+
+
+import sqlite3
+
+def getconn():
+    conn = sqlite3.connect("c:/ncstest4")
+    return conn
+
+def create_table():
+    conn = getconn()
+    cur = conn.cursor()
+    sql = """
+        CREATE TABLE member(
+        memberId	char(5) PRIMARY KEY,
+    	passwd		char(10) NOT NULL,
+    	name		TEXT NOT NULL,
+	    gender		char(4),
+	    age			INTEGER
+        )
+    """
+    cur.execute(sql)
+    conn.commit()
+    print("member 테이블 생성")
+    conn.close()
+
+def select_member():
+    conn = getconn()
+    cur = conn.cursor()
+    sql = "SELECT * FROM member"
+    cur.execute()
+    rs = cur.fetchall()
+    print(rs)
+    conn.close
+
+def insert_member():
+    conn = getconn()
+    cur = conn.cursor()
+    sql = "INSERT INTO member(memberId, passwd, name, gender, age) VALUES (?, ?, ?, ?, ?)"
+    cur.execute(sql, ('10003', 'm123456781', 'RM', '남자', 28))
+    conn.commit()
+    conn.close()
+
+def select_one():
+    conn = getconn()
+    cur = conn.cursor()
+    sql = "SELECT * FROM member WHERE memberId = ?"
+    cur.execute(sql, ('10003',))
+    rs = cur.fetchall()
+    print(rs)
+    conn.close()
