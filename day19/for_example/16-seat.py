@@ -6,7 +6,7 @@ col = int(input("열의 수 : "))
 
 
 if customer % col == 0:
-    # row = int(customer / col)
+    # row = int(custom / col)
     row = customer // col
 else:
     row = int(customer / col) + 1
