@@ -1,0 +1,8 @@
+- method방식
+- get방식, 
+
+모듈(module) - custom.py > 라이브러리
+프레임워크(Framework) - 모듈, 라이브러리가 이미 제공
+- 사용자가 작업하는 도구
+
+
