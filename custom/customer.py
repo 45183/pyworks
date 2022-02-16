@@ -23,9 +23,9 @@ class Customer:
 
 
 
-
-silver = Customer(1001, "정국",)
-price = 10000
-cost = silver.calc_price(price)
-print(silver.getname() + "님의 구매 비용은 " + str(cost) + "원 입니다.")
-print(silver)
+if __name__ == "__main__":
+    silver = Customer(1001, "정국",)
+    price = 10000
+    cost = silver.calc_price(price)
+    print(silver.getname() + "님의 구매 비용은 " + str(cost) + "원 입니다.")
+    print(silver)
