@@ -1,0 +1,21 @@
+웹 서버 가동 - app.py
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')                 # url 경로 - 127.0.0.1:5000
+def index():                    # 제어 함수
+    return render_template("index.html")
+
+
+app.run()
+
+
+
+{{  }} : 출력
+@app.route('/', methods = ['GET'])                 # url 경로 - 127.0.0.1:5000, methodes = ['GET'] 생략가능
+
+
+day31 폴더에 추가함
+member 폴더
