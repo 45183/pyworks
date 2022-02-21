@@ -1,8 +1,8 @@
 import re
 
 pattern1 = re.compile("[a-z]")             # 정규 표현식
-pattern2 = re.compile("[a-z]+")            # 처음 문자부터 검색
-result1 = pattern1.match("afternoon")
+pattern2 = re.compile("[a-z]+")            # match() 함수 : 처음 문자부터 검색 (처음 불일치시 none) - find()와 유사함
+result1 = pattern1.match("afternoon")      # match 사용시 compile 필요
 result2 = pattern2.match("afternoon")
 print(result1)
 print(result2)
