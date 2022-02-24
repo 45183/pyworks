@@ -1,0 +1,45 @@
+관계형 데이터베이스(RDBMS) - SQL
+
+객체 관계형 매핑(ORM) - 클래스와 객체
+웹 프레임워크 - 장고, 스프링부트
+
+
+M(Model)T(Templates)V(View) 패턴
+
+
+프로젝트 생성 - cmd에서 작성
+프로젝트 폴더 > django-admin startproject config .
+
+앱 생성 - 파이참 또는 cmd 작성
+python manage.py startapp poll
+
+서버 작동
+python maage.py runserver
+
+앱을 db에 이주시킴(적용)
+python manage.py migrate
+
+
+
+- 웹 페이지 만들기
+1. url 경로
+2. 제어 함수
+3. 템플릿 - html
+
+
+
+
+
+
+
+
+
+
+
+settings.py 에서
+
+LANGUAGE_CODE = 'ko-kr'
+
+TIME_ZONE = 'Asia/Seoul'
+
+
