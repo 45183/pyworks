@@ -6,6 +6,9 @@
 
 M(Model)T(Templates)V(View) 패턴
 
+모델 클래스 작성 후 (수정 등)
+1. python manage.py makemigrations -> 장고에 저장
+2. python manage.py migrate -> db에 적용
 
 프로젝트 생성 - cmd에서 작성
 프로젝트 폴더 > django-admin startproject config .
