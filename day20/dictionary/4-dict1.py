@@ -34,8 +34,8 @@ person['name'] = "최지능"
 
 # 전체 요소 조회
 for key in person:
-    print(key)                                  # key만 출력
-    print(person[key])                   # 값(value) 출력
+    print(key)                         # key만 출력
+    print(person[key])                 # 값(value) 출력
     print(key, ':', person[key])       # key : value
 
 
